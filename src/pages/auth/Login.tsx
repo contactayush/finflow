@@ -23,7 +23,7 @@ export default function Login() {
       toast.error("Please enter your email first.");
       return;
     }
-    const redirectUrl = process.env.REACT_APP_RESET_PASSWORD_URL || 'http://localhost:8080/reset-password';
+    const redirectUrl = process.env.REACT_APP_RESET_PASSWORD_URL || 'https://finflow-dusky.vercel.app/reset-password';
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
       redirectTo: redirectUrl, // <-- set your reset password page URL
     });
