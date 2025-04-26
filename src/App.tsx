@@ -18,7 +18,7 @@ import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import SearchResultsPage from "@/pages/SearchResultsPage";
-import ResetPassword from "@/pages/ResetPassword"; // ✅ Correct import
+import ResetPassword from "@/pages/reset-password"; // ✅ Correct import
 
 const queryClient = new QueryClient();
 
